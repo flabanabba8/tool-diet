@@ -1,0 +1,6 @@
+# Verification
+
+- Eight local tests pass (also with ResourceWarning as an error): usage counts only names inside the window; toolsets ranked by weight with their calls; the plan drops only unused, unprotected toolsets with exact commands and a believable saving; `keep`, `min_calls` and the protected set are respected; a missing or corrupt database is reported rather than raised; the what-if goes through the assembler callback; the database is byte-identical after reading; bad toolset names are rejected.
+- 2026-11-07 through Hermes's real registry in a throwaway home with a synthetic session database: 19 tools measured at about 9,000 estimated tokens per request; the plan listed unused toolsets with commands and an estimated 38 percent saving; the what-if through `get_tool_definitions` reported a slightly different figure (3,069 against 3,394 tokens), as the README says it can.
+- 2026-11-07 read-only run against the author's real profile: 19 tools, about 8,600 estimated tokens per request, 89 sessions and 3,932 tool calls in 30 days, 5 candidate toolsets, an estimated 45 percent saving. Nothing was disabled, and no message content was read.
+- Not yet verified: whether trimming the tools improves real task accuracy or cost, other platforms' toolset configuration, Windows.

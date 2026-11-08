@@ -1,0 +1,10 @@
+name: tool-diet
+version: "0.1.0"
+description: "Measure what your enabled tools cost in tokens on every request, compare it with the tools you actually call, and get exact commands to trim unused toolsets."
+author: "Tool Diet contributors"
+license: GPL-3.0-or-later
+requires_hermes: ">=0.22.0"
+provides_tools:
+  - diet_measure
+  - diet_plan
+  - diet_whatif
